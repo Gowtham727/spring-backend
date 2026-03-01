@@ -16,6 +16,14 @@ public class NexJsController {
     public String get(){
         return "from the git cloned project";
     }
+    @GetMapping("/newbranch")
+    public String all(){
+        return "message from the created new branch";
+    }
+    @GetMapping("/new")
+    public String alls(){
+        return "message from the created new branch";
+    }
     @PostMapping("/login")
     public void login(@RequestBody List<Login> login){
         service.savelogin(login);

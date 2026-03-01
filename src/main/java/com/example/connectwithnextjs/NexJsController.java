@@ -12,6 +12,10 @@ public class NexJsController {
 
     @Autowired
     private ProductService service;
+    @GetMapping("/get")
+    public String get(){
+        return "from the git cloned project";
+    }
     @PostMapping("/login")
     public void login(@RequestBody List<Login> login){
         service.savelogin(login);
